@@ -2,7 +2,7 @@ runtime: nodejs10
 service: default
 
 handlers:
-    # Serve all static files with urls ending with a file extension
+    # Serve all static files with urls ending with a file extension test
     - url: /(.*\..+)$
       static_files: dist/\1
       upload: dist/(.*\..+)$
