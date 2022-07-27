@@ -10,9 +10,7 @@ import {Router} from '@angular/router';
   styleUrls: ['navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
-  private loggedIn: Observable<boolean>;
-
+  loggedIn: Observable<boolean>;
   private authUrl = `${CONFIG.cas_auth_url}?service=${CONFIG.service_url}`;
   private _id = '';
 
